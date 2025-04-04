@@ -7,39 +7,60 @@ const TopUsers = () => {
 
   const styles = {
     container: {
-      backgroundColor: 'white',
-      padding: '1.5rem',
-      borderRadius: '8px',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+      backgroundColor: '#ffffff',
+      padding: '2rem',
+      borderRadius: '12px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+      width: '90%',
+      maxWidth: '600px',
+      margin: '0 auto',
     },
     title: {
-      fontSize: '1.5rem',
-      fontWeight: 'bold',
-      marginBottom: '1rem',
+      fontSize: '2rem',
+      fontWeight: '700',
+      marginBottom: '1.5rem',
+      color: '#333',
+      textAlign: 'center',
+      background: 'linear-gradient(90deg, #007bff, #00c4ff)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
     },
     userCard: {
       display: 'flex',
       alignItems: 'center',
-      gap: '1rem',
+      gap: '1.5rem',
       padding: '1rem',
-      backgroundColor: '#f8f9fa',
-      borderRadius: '4px',
+      backgroundColor: '#f9fafb',
+      borderRadius: '8px',
       marginBottom: '1rem',
+      borderLeft: '4px solid #007bff',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
     },
     image: {
       borderRadius: '50%',
-      width: '50px',
-      height: '50px',
+      width: '60px',
+      height: '60px',
+      border: '2px solid #007bff',
+      padding: '2px',
+      flexShrink: 0,
+    },
+    userInfo: {
+      flex: 1,
     },
     userName: {
-      fontWeight: '600',
+      fontWeight: '700',
+      fontSize: '1.2rem',
+      color: '#1a1a1a',
     },
     postCount: {
       color: '#666',
+      fontSize: '0.95rem',
     },
     loading: {
       textAlign: 'center',
       padding: '2rem',
+      fontSize: '1.2rem',
+      color: '#007bff',
     }
   };
 
@@ -84,7 +105,7 @@ const TopUsers = () => {
               alt={user.name} 
               style={styles.image}
             />
-            <div>
+            <div style={styles.userInfo}>
               <h3 style={styles.userName}>{user.name}</h3>
               <p style={styles.postCount}>Posts: {user.postCount}</p>
             </div>
