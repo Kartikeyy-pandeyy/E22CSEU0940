@@ -1,0 +1,18 @@
+.top-users {
+  padding: 10px;
+}
+
+.top-users ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-users li {
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .top-users {
+    font-size: 14px;
+  }
+}

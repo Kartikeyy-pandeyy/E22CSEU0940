@@ -1,0 +1,41 @@
+# Node.js / npm
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json  # Optional: Include if you use npm and want to lock dependencies
+
+# Build output
+/build
+/dist
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# Dependency directories
+*.lock
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Testing
+coverage/
+
+# Miscellaneous
+*.swp
+*.swo

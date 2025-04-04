@@ -1,0 +1,9 @@
+.trending-posts {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .trending-posts {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,9 @@
+.feed {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .feed {
+    font-size: 14px;
+  }
+}
